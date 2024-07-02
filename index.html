@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Carlo Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Método de Monte Carlo para Integrales</h1>
+        <form id="simulationForm">
+            <label for="simulations">Número de Simulaciones:</label>
+            <input type="number" id="simulations" name="simulations" min="1" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="results">
+            <p>Resultado Matemático: <span id="exactResult"></span></p>
+            <p>Resultado Aproximado: <span id="approxResult"></span></p>
+            <p>Porcentaje de Error: <span id="errorPercentage"></span>%</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
